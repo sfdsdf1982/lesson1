@@ -5,7 +5,7 @@ from pymysql import *
 def show_goods(cur):
     cur.execute("select * from goods")
     rows = cur.fetchall()  # получаем все данные после запроса в виде списка словарей
-    pprint(rows)
+    #pprint(rows)
     for item in rows:
         print(f"Автомобиль {item['title']} стоит {item['price']}")
 
